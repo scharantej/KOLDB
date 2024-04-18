@@ -1,0 +1,10 @@
+
+
+<h1>KOL List</h1>
+<ul>
+{% for kol in kols %}
+<li><a href="{{ url_for('kol_profile', kol_id=kol.id) }}">{{ kol.name }}</a></li>
+{% endfor %}
+</ul>
+
+
